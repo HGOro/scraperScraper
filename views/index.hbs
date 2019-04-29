@@ -3,12 +3,17 @@
         <h1>
             Scraper Scraper Read All About It!
         </h1>
-        <button>
-            Scrape News Articles
-        </button>
-        <button>
-            Clear Articles
-        </button>
+        <form action="/articles/scrape" method="GET"> 
+            <button>
+                Scrape News Articles
+            </button>
+        </form>
+        <form>
+            <button>
+                Clear Articles
+            </button>
+        </form>
+
 
     </navbar>
     {{#each articles}}
