@@ -1,6 +1,6 @@
 //set up mongoose connection
 var mongoose = require('mongoose');
-var mongoDB = 'mongodb://localhost/nytscraper_db';
+var mongoDB = process.env.MONGODB_URI || 'mongodb://localhost/nytscraper_db';
 mongoose.connect(mongoDB, { useNewUrlParser: true});
 var db = mongoose.connection;
 
