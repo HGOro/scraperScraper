@@ -1,8 +1,21 @@
 <div>
+    <navbar>
+        <h1>
+            Scraper Scraper Read All About It!
+        </h1>
+        <button>
+            Scrape News Articles
+        </button>
+        <button>
+            Clear Articles
+        </button>
+
+    </navbar>
     {{#each articles}}
     <div>
         <h1>{{this.title}}</h1>
         <p>Summary: {{this.summary}}</p>
+        <p>Link to article: {{this.href}}</p>
     </div>
     {{/each}}
 </div>

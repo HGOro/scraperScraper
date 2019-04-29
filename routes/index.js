@@ -17,8 +17,6 @@ router.get('/', function (req, res, next) {
     .then(function (response) {
       console.log("pulling from db");
       res.render('index', { articles: response });
-
-
     })
 });
 
